@@ -10,7 +10,6 @@
         the user know the success of the upload. And finally, we create an error function, starting in line 7, that also uses the<br>
         d3.select tool to change the first header to say "No data avaliable." letting the user know that the upload was unsuccessful.<br>
       <br>
-      <br>
       <pre>
       1    var myPromise=d3.json("myData.json")
       2       myPromise.then(
@@ -24,7 +23,12 @@
       10       })
       </pre>
   </li>
-  <li></li>
+  <li>One of the hardest things that I still do not completely understand is how we know when something is a attribute of a object<br>
+        For example, let's say we are given an object with a name, date, time, and picture. When inserting this information onto<br>
+        a website we would use .text to insert the name, date, and time and we would use .attr to insert the image. Why do we use<br>
+        different things? Aren't name, date, time, and picture all attibutes of this object? Why can we not just use .attr for all<br>
+        of them?
+  </li>
 </ol>
 </body>
 </html>
