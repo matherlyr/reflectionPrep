@@ -7,11 +7,15 @@
   
       <br><br><pre>
       1    var myPromise=d3.json("myData.json")
-      2  myPromise.then(
-          nction(success)
-          {
-          d3.select("h1").text(
-      
+      2       myPromise.then(
+      3       function(success)
+      4        {
+      5         d3.select("h1").text("Your data has arrived!")
+      6        },
+      7        function(error)
+      8        {
+      9         d3.select("h1").text("No data avaliable.")
+      10       })
       </pre>
   
   </li>
