@@ -3,9 +3,15 @@
 <h1>Refelction!</h1>
 <ol>
   <li>One of the hardest things I've learned how to do in this class is uploading a json file onto my repositories. In order<br>
-        to do this, we would create a promise like the one below. 
-  
-      <br><br><pre>
+        to do this, we would create a promise like the one below. In line one, we define a new variable that uses d3.json<br>
+        to upload a json file called myData. Then, in line 2 we create a way for users to know if the data has been successfully<br>
+        uploaded. First, we create a function that will be executed if the json file is successfully uploaded, starting in line 3.<br>
+        Within the success function, we use the d3.select tool to change the first header to say "Your data has arrived!" letting<br>
+        the user know the success of the upload. And finally, we create an error function, starting in line 7, that also uses the<br>
+        d3.select tool to change the first header to say "No data avaliable." letting the user know that the upload was unsuccessful.<br>
+      <br>
+      <br>
+      <pre>
       1    var myPromise=d3.json("myData.json")
       2       myPromise.then(
       3       function(success)
@@ -17,7 +23,6 @@
       9         d3.select("h1").text("No data avaliable.")
       10       })
       </pre>
-  
   </li>
   <li></li>
 </ol>
